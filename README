@@ -1,0 +1,4 @@
+Internal Documentation:
+This project uses a variant struct to hold the tokens. There is also a callable struct in main.cpp that returns the line number, token type and token value when std::visit is called in main. There is also a class for the scanner. 
+External Documentation:
+This project takes in input from a .b file containing a list of tokens and outputs the tokens along with the type of token they are as well as the line and column number. To run the program, put in the .b file in the makefile IN = "" and type make run at the terminal. The three big issues with the code are that it does not handle '' characters, strings or bad characters. When it sees these, the code goes into an infinite loop. 
